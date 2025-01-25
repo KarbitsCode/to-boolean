@@ -1,8 +1,8 @@
 {
-  "name": "to-boolean",
+  "name": "to-boolean-ts",
   "version": "1.0.0",
   "description": "Convert strings to boolean.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "npm run build && tape dist/test.js",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/rafaelrinaldi/to-boolean#readme",
   "devDependencies": {
+    "@types/node": "^22.10.10",
     "@types/tape": "^5.8.1",
     "tape": "^4.0.3",
     "typescript": "^5.7.3"
