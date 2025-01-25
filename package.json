@@ -4,7 +4,8 @@
   "description": "Convert strings to boolean.",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js",
+    "build": "tsc",
+    "test": "npm run build && tape dist/test.js",
     "prepare": "npm test"
   },
   "repository": {
@@ -27,6 +28,8 @@
   },
   "homepage": "https://github.com/rafaelrinaldi/to-boolean#readme",
   "devDependencies": {
-    "tape": "^4.0.3"
+    "@types/tape": "^5.8.1",
+    "tape": "^4.0.3",
+    "typescript": "^5.7.3"
   }
 }

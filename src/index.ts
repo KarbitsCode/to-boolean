@@ -1,8 +1,10 @@
+declare var define: any;
+
 (function(exports) {
 
   var TRUTHY_VALUES = 'y yes true'.split(/\s/);
 
-  function toBoolean(value) {
+  function toBoolean(value: any): boolean {
     // undefined and null are considered falsy values
     if (value === undefined || value === null) {
       return false;

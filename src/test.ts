@@ -3,7 +3,7 @@
 var toBoolean = require('./');
 var test = require('tape');
 
-test('truthy values', function(t) {
+test('truthy values', function(t: any) {
   t.deepEqual(toBoolean('y'), true, '"y" is "true"');
   t.deepEqual(toBoolean('yes'), true, '"yes" is "true"');
   t.deepEqual(toBoolean('true'), true, '"true" is "true"');
@@ -11,7 +11,7 @@ test('truthy values', function(t) {
   t.end();
 });
 
-test('falsy', function(t) {
+test('falsy', function(t: any) {
   t.deepEqual(toBoolean('n'), false, '"n" is "false"');
   t.deepEqual(toBoolean('no'), false, '"no" is "false"');
   t.deepEqual(toBoolean('false'), false, '"false" is "false"');
